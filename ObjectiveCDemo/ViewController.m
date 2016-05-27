@@ -6,22 +6,26 @@
 //  Copyright © 2015 Derek Clarkson. All rights reserved.
 //
 
+@import Alchemic;
+
 #import "ViewController.h"
+#import "Database.h"
 
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+@implementation ViewController {
+    Database *_database;
+    IBOutlet  UILabel __weak *_dbLabel;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+AcRegister(AcReference)
+AcInject(_database)
+
+-(void) awakeFromNib {
+    AcSetReference(self);
+    NSLog(@"Awake !!!!");
+}
+
+-(void)viewDidLoad {
+    _dbLabel.text = [NSString stringWithFormat:@"db: %@", _database.dbName];
 }
 
 @end

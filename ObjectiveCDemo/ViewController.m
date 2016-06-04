@@ -20,7 +20,7 @@ AcRegister(AcReference)
 AcInject(_database)
 
 -(void) awakeFromNib {
-    AcSetReference(self);
+    AcSet(self);
     NSLog(@"Awake !!!!");
 }
 

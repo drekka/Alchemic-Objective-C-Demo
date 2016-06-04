@@ -129,12 +129,12 @@
 		F4F734391CF6E537009E04AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F40F17D71CF6D082003CA908 /* Alchemic.framework.dSYM */,
-				F40F17D81CF6D082003CA908 /* StoryTeller.framework.dSYM */,
 				F40F17D31CF6D054003CA908 /* Alchemic.framework */,
-				F40F17D41CF6D054003CA908 /* StoryTeller.framework */,
+				F40F17D71CF6D082003CA908 /* Alchemic.framework.dSYM */,
 				6CB95C241BECDC7A00D0B194 /* PEGKit.framework */,
 				6CB95C251BECDC7A00D0B194 /* PEGKit.framework.dSYM */,
+				F40F17D41CF6D054003CA908 /* StoryTeller.framework */,
+				F40F17D81CF6D082003CA908 /* StoryTeller.framework.dSYM */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -6,10 +6,10 @@
 //  Copyright © 2015 Derek Clarkson. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import Alchemic;
+@import UIKit;
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<AlchemicAware>
 
 @end
 

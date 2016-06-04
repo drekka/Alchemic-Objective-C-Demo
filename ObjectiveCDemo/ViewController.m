@@ -19,9 +19,8 @@
 AcRegister(AcReference)
 AcInject(_database)
 
--(void) awakeFromNib {
+-(void) alchemicDidInjectDependencies {
     AcSet(self);
-    NSLog(@"Awake !!!!");
 }
 
 -(void)viewDidLoad {
